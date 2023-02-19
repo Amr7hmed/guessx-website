@@ -1,0 +1,169 @@
+
+
+.leaderboard {
+    &__headr {
+        margin: 40px 0px;
+
+        h3 {
+            font-weight: 700;
+            font-size: 28px;
+            color: var(--blue-color);
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--grey-three-color);
+        }
+    }
+
+
+    
+    &__row {
+        .accordion-item {
+            box-shadow: 0px 4px 16px rgba(4, 6, 26, 0.055), 0px 4px 8px rgba(4 ,6 ,26 , .1), 0px 2px 4px rgba(4, 6, 26, 0.034);
+
+            .accordion-header {
+                .accordion-button {
+                    display: flex;
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #74006f;
+
+                    img {
+                        width: 80px;
+                        height: 70px;
+                    }
+
+                    &::after {
+                        filter: invert(19%) sepia(90%) saturate(7345%) hue-rotate(297deg) brightness(56%) contrast(122%);
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                        border-color: white;
+                    }
+
+                    &:not(.collapsed) {
+                        color: #74006f;
+                        background-color: #e5e5e5;
+                        box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+
+                        &::after {
+                            filter: invert(19%) sepia(90%) saturate(7345%) hue-rotate(297deg) brightness(56%) contrast(122%);
+                        }
+                    }
+
+                }
+
+            }
+            
+            .accordion-body {
+                .textheader {
+                    margin: 15px 0px;
+                    text-align: center;
+                    color: var(--orangeligh-two-color);
+                    font-size: 18px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                }
+
+                .userfirst {
+                    text-align: center;
+                    color: var(-blue-color);
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+
+                }
+
+                .cover {
+                    width: 100%;
+                    height: 360px;
+
+                    img {
+                        width: 100%;
+                        height: 360px;
+                    }
+                }
+
+                .useritem {
+                    margin: 25px 0px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid rgba(21, 34, 72, 0.08);
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                    .data {
+                        margin: 25px 0px;
+                        display: flex;
+                        align-items: center;
+                        .data_user {
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                            margin-right: 20px;
+                        }
+                        ul{
+                            li.name{
+                                font-size: 18px;
+                                color: var(--black-color);
+                                font-weight: 700;
+                            }
+                            li.text{
+                                margin: 20px 0px;
+                                display: flex;
+                                flex-direction: column;
+                                font-size: 16px;
+                                font-weight: 600;
+                                color: var(--grey-three-color);
+                            }
+                            li.listimage{
+                                img{
+                                    width: 70px;
+                                    height: 53px;
+                                    margin-right: 15px;
+                                }
+                                span{
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    color: var(--grey-three-color);
+                                }
+                            }
+                        }
+
+                    }
+                    .tag{
+                        width: 50px;
+                        height: 50px;
+                        position: relative;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                        }
+                        .number{
+                            position: absolute;
+                            top: 15px;
+                            left: 25px;
+                            transform: translate(-50%, -50%);
+                            color: #152248;
+                            font-size: 18px;
+                            font-weight: bold;
+                        
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+

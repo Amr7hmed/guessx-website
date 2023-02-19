@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoot</title>
+    <link rel="icon" href="../../wwwroot/meda/logo/logo.png" />
+    <link rel="stylesheet" href="../../wwwroot/css/vendor/normalize.css" />
+    <link rel="stylesheet" href="../../wwwroot/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../wwwroot/css/main.css" />
+</head>
+
+<body>
+
+    <main class='leaderboard'>
+        <!--Navbar Component-->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a href="../Home/index.html" class="navbar-brand">
+                    <img src="../../wwwroot/meda/logo/logo.png" alt="ImageLogo" class='logo' />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="my-1 mx-2 close">X</span>
+                    <span class="navbar-icon">
+                        <img src="../../wwwroot/meda/icon/bars-solid.svg" alt="">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+
+                    <form class="input-group" role="search">
+                        <button class="btn" type="button">
+                            <img src="../../wwwroot/meda/icon/icon_search.png" alt="" />
+                        </button>
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                    </form>
+
+
+                    <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a href="../myguesses/index.html">My Guesses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./index.html">Leaderboard</a>
+                        </li>
+
+                        <li class="nav-item guesses">
+                            <img src="../../wwwroot/meda/icon/guess_icon.png" alt="IconGuesses" />
+                            <span class='guesses_number'>10</span>
+                            <span class='guesses_text'>Guesses</span>
+                        </li>
+
+                        <li class="nav-item account">
+                            <img src="../../wwwroot/meda/icon/icon_profile.png" alt="IconProfile" />
+                            <a href="./login">Login</a>
+                            /
+                            <a href="./register">Register</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container">
+
+            <div class="leaderboard__headr">
+                <h3>Leaderboards</h3>
+                <p>For The Past 30 Days</p>
+            </div>
+            <div class='leaderboard__row'>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading-one">
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse-one" aria-expanded="false"
+                                aria-controls="flush-collapse-one">
+                                <img src="../../wwwroot/meda/leaderboard/shoot_icon.png" alt="" />
+                                Shooot
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-one" class="accordion-collapse collapse"
+                            aria-labelledby="flush-heading-one" data-bs-parent="#accordionFlushExample">
+
+                            <div class="accordion-body">
+                                <h5 class="textheader">shooot champion for all leagues so far is</h5>
+                                <p class="userfirst">Dennis Callis</p>
+                                <div class="cover">
+                                    <img src="../../wwwroot/meda/leaderboard/crad_one.png" alt="" />
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_one.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>Dennis Callis</li>
+                                            <li class='text'>
+                                                <span>Total guesses 42</span>
+                                                <span>Correct 11 - Waiting 0 - Wrong 31</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_four.png" />
+                                                <span>+10</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <img src="../../wwwroot/meda/icon/icon_tag_one.png" alt="" />
+                                        <span class='number'>1</span>
+                                    </div>
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_two.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>Autumn Phillips</li>
+                                            <li class='text'>
+                                                <span>Total guesses 35</span>
+                                                <span>Correct 15 - Waiting 5 - Wrong 28</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <img src="../../wwwroot/meda/icon/icon_tag_two.png" alt="" />
+                                        <span class='number'>2</span>
+                                    </div>
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_three.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>User 3</li>
+                                            <li class='text'>
+                                                <span>Total guesses 42</span>
+                                                <span>Correct 11 - Waiting 0 - Wrong 31</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <span class='number'>3</span>
+                                    </div>
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_four.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>User 4</li>
+                                            <li class='text'>
+                                                <span>Total guesses 35</span>
+                                                <span>Correct 15 - Waiting 5 - Wrong 28</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <span class='number'>4</span>
+                                    </div>
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_five.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>User 5</li>
+                                            <li class='text'>
+                                                <span>Total guesses 35</span>
+                                                <span>Correct 15 - Waiting 5 - Wrong 28</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <span class='number'>5</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading-two">
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse-two" aria-expanded="false"
+                                aria-controls="flush-collapse-two">
+                                <img src="../../wwwroot/meda/leaderboard/spl_icon.svg" alt="" />
+                                Super Cup Saudi
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-two" class="accordion-collapse collapse"
+                            aria-labelledby="flush-heading-two" data-bs-parent="#accordionFlushExample">
+
+                            <div class="accordion-body">
+                                <h5 class="textheader">shooot champion for all leagues so far is</h5>
+                                <p class="userfirst">Dennis Callis</p>
+                                <div class="cover">
+                                    <img src="../../wwwroot/meda/leaderboard/crad_one.png" alt="" />
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_one.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>Dennis Callis</li>
+                                            <li class='text'>
+                                                <span>Total guesses 42</span>
+                                                <span>Correct 11 - Waiting 0 - Wrong 31</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_four.png" />
+                                                <span>+10</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <img src="../../wwwroot/meda/icon/icon_tag_one.png" alt="" />
+                                        <span class='number'>1</span>
+                                    </div>
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_two.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>Autumn Phillips</li>
+                                            <li class='text'>
+                                                <span>Total guesses 35</span>
+                                                <span>Correct 15 - Waiting 5 - Wrong 28</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <img src="../../wwwroot/meda/icon/icon_tag_two.png" alt="" />
+                                        <span class='number'>2</span>
+                                    </div>
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_three.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>User 3</li>
+                                            <li class='text'>
+                                                <span>Total guesses 42</span>
+                                                <span>Correct 11 - Waiting 0 - Wrong 31</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <span class='number'>3</span>
+                                    </div>
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_four.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>User 4</li>
+                                            <li class='text'>
+                                                <span>Total guesses 35</span>
+                                                <span>Correct 15 - Waiting 5 - Wrong 28</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <span class='number'>4</span>
+                                    </div>
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_five.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>User 5</li>
+                                            <li class='text'>
+                                                <span>Total guesses 35</span>
+                                                <span>Correct 15 - Waiting 5 - Wrong 28</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <span class='number'>5</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading-three">
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapse-three" aria-expanded="false"
+                                aria-controls="flush-collapse-three">
+                                <img src="../../wwwroot/meda/leaderboard/spl_icon.svg" alt="" />
+                                Pro League
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-three" class="accordion-collapse collapse"
+                            aria-labelledby="flush-heading-three" data-bs-parent="#accordionFlushExample">
+
+                            <div class="accordion-body">
+                                <h5 class="textheader">shooot champion for all leagues so far is</h5>
+                                <p class="userfirst">Dennis Callis</p>
+                                <div class="cover">
+                                    <img src="../../wwwroot/meda/leaderboard/crad_one.png" alt="" />
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_one.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>Dennis Callis</li>
+                                            <li class='text'>
+                                                <span>Total guesses 42</span>
+                                                <span>Correct 11 - Waiting 0 - Wrong 31</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_four.png" />
+                                                <span>+10</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <img src="../../wwwroot/meda/icon/icon_tag_one.png" alt="" />
+                                        <span class='number'>1</span>
+                                    </div>
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_two.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>Autumn Phillips</li>
+                                            <li class='text'>
+                                                <span>Total guesses 35</span>
+                                                <span>Correct 15 - Waiting 5 - Wrong 28</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <img src="../../wwwroot/meda/icon/icon_tag_two.png" alt="" />
+                                        <span class='number'>2</span>
+                                    </div>
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_three.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>User 3</li>
+                                            <li class='text'>
+                                                <span>Total guesses 42</span>
+                                                <span>Correct 11 - Waiting 0 - Wrong 31</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <span class='number'>3</span>
+                                    </div>
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_four.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>User 4</li>
+                                            <li class='text'>
+                                                <span>Total guesses 35</span>
+                                                <span>Correct 15 - Waiting 5 - Wrong 28</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <span class='number'>4</span>
+                                    </div>
+                                </div>
+
+                                <div class='useritem'>
+                                    <div class='data'>
+
+                                        <img src="../../wwwroot/meda/leaderboard/user_five.png" alt=""
+                                            class="data_user" />
+                                        <ul>
+                                            <li class='name'>User 5</li>
+                                            <li class='text'>
+                                                <span>Total guesses 35</span>
+                                                <span>Correct 15 - Waiting 5 - Wrong 28</span>
+                                            </li>
+
+                                            <li class='listimage'>
+                                                <img src="../../wwwroot/meda/leaderboard/item_one.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_two.png" />
+                                                <img src="../../wwwroot/meda/leaderboard/item_three.png" />
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="tag">
+                                        <span class='number'>5</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </main>
+
+    <script src="../../wwwroot/js/vendor/popper.min.js"></script>
+    <script src="../../wwwroot/js/vendor/bootstrap.min.js"></script>
+    <script></script>
+</body>
+
+</html>
