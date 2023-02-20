@@ -42,7 +42,7 @@
 
                     <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a href="./myguesses">My Guesses</a>
+                            <a href="./index.html">My Guesses</a>
                         </li>
                         <li class="nav-item">
                             <a href="../leaderboard/index.html">Leaderboard</a>
@@ -131,6 +131,10 @@
                                         <span class="imageteamtwo"
                                             style="background-image: url(../../wwwroot/meda/users/image_four.png);">
                                         </span>
+                                        
+                                        <span class="imageteamtwo"
+                                            style="background-image: url(../../wwwroot/meda/users/image_five.png);">
+                                        </span>
 
                                         <span class="imageteamtwo"
                                             style="background-image: url(../../wwwroot/meda/users/image_six.png);">
@@ -140,19 +144,46 @@
                                         <span class="imageteamtwo"
                                             style="background-image: url(../../wwwroot/meda/users/image_seven.png);">
                                         </span>
+                                        <span class="imageteamtwo"
+                                            style="background-image: url(../../wwwroot/meda/users/image_ength.png);">
+                                        </span>
+                                        <span class="imageteamtwo"
+                                            style="background-image: url(../../wwwroot/meda/users/image_nine.png);">
+                                        </span>
+                                        <span class="imageteamtwo"
+                                            style="background-image: url(../../wwwroot/meda/users/image_ten.png);">
+                                        </span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class='cardend'>
-                            <span class="left lockedclose">
-                                <img src="../../wwwroot/meda/icon/icon_lock.png" alt="IconLock" />
-                                <span>Guesses Are Now Locked</span>
+                            <span class="left open">
+                                <img src="../../wwwroot/meda/icon/icontime.png" alt="IconLock" />
+                                <span class="text-open">
+                                    
+                                    
+
+
+                                      <div class="timer-group">
+                                        <div id="countdown">
+                                          <ul>
+                                            <li><span id="days"></span>days</li> : 
+                                            <li><span id="hours"></span>Hours</li> : 
+                                            <li><span id="minutes"></span>Minutes</li> : 
+                                            <li><span id="seconds"></span>Seconds</li>
+                                          </ul>
+                                        </div>
+                                      </div>
+
+
+
+                                </span>
                             </span>
-                            <span class="right lockedclose">
-                                <a href="/" class='btn btn_seedetails'>
-                                    See Details
-                                </a>
+                            <span class="right open">
+                                <button class='btn btn_guess'>
+                                    Guess Now
+                                </button>
                             </span>
 
                         </div>
@@ -228,6 +259,49 @@
             ],
         });
 
+        (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "09/30/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
 
     </script>
 </body>

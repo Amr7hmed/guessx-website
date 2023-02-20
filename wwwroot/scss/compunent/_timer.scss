@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400);
+
+.timer-group{
+    display: flex;
+    #countdown{
+        ul{
+            display: flex;
+            li{
+                padding: 0px;
+                margin: 5px 10px;
+            }
+        }
+    }
+}
+
+
+
+.timer.hour {
+  background: rgba(0, 0, 0, .3);
+  height: 400px;
+  left: 0;
+  width: 400px;
+  top: 0;
+  display: none;
+  .hand {
+    span {
+        animation-duration: 3600s;
+        border-top-color: rgba(255, 0, 255, .4);
+        border-right-color: rgba(255, 0, 255, .4);
+        border-width: 200px;
+      }
+      &:after {
+        height: 360px;
+        left: 20px;
+        width: 360px;
+        top: 20px;
+      }
+  }
+}
+
+
+.timer.minute {
+  background: rgba(0, 0, 0, .2);
+  height: 350px;
+  left: 25px;
+  width: 350px;
+  top: 25px;
+  .hand {
+    span {
+        animation-duration: 60s;
+        border-top-color: rgba(0, 255, 255, .4);
+        border-right-color: rgba(0, 255, 255, .4);
+        border-width: 175px;
+      }
+  }
+  &:after {
+    height: 310px;
+    left: 20px;
+    width: 310px;
+    top: 20px;
+  }
+}
+
+
+.timer.second {
+  background: rgba(0, 0, 0, .2);
+  height: 300px;
+  left: 50px;
+  width: 300px;
+  top: 50px;
+  .hand {
+    span {
+        animation-duration: 1s;
+        border-top-color: rgba(255, 255, 255, .15);
+        border-right-color: rgba(255, 255, 255, .15);
+        border-width: 150px;
+      }
+  }
+  &:after {
+    height: 296px;
+    left: 2px;
+    width: 296px;
+    top: 2px;
+  }
+}
+
+
+.face {
+  background: rgba(0, 0, 0, .1);
+  border-radius: 50%;
+  height: 296px;
+  left: 52px;
+  padding: 165px 40px 0;
+  position: absolute;
+  width: 296px;
+  text-align: center;
+  top: 52px;
+  h2 {
+    font-weight: 300; 
+  }
+  p {
+    border-radius: 20px;
+    font-size: 76px;
+    font-weight: 400;
+    position: absolute;
+    top: 17px;
+    width: 260px;
+    left: 20px;
+  }
+  
+}
+
+
+@keyframes spin1 {
+  0% {
+    transform: rotate(225deg);
+  }
+  50% {
+    transform: rotate(225deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(225deg);
+  }
+  50% {
+    transform: rotate(405deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}

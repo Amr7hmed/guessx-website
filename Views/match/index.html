@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoot</title>
+    <link rel="icon" href="../../wwwroot/meda/logo/logo.png" />
+    <link rel="stylesheet" href="../../wwwroot/css/vendor/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="../../wwwroot/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../wwwroot/css/vendor/slick.scss" />
+    <link rel="stylesheet" href="../../wwwroot/css/main.css" />
+
+</head>
+
+<body>
+
+    <main class='home'>
+        <!--Navbar Component-->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a href="./index.html" class="navbar-brand">
+                    <img src="../../wwwroot/meda/logo/logo.png" alt="ImageLogo" class='logo' />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="my-1 mx-2 close">X</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+
+                    <form class="input-group" role="search">
+                        <button class="btn" type="button">
+                            <img src="../../wwwroot/meda/icon/icon_search.png" alt="" />
+                        </button>
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                    </form>
+
+
+                    <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a href="../myguesses/index.html">My Guesses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../leaderboard/index.html">Leaderboard</a>
+                        </li>
+
+                        <li class="nav-item guesses">
+                            <img src="../../wwwroot/meda/icon/guess_icon.png" alt="IconGuesses" />
+                            <span class='guesses_number'>10</span>
+                            <span class='guesses_text'>Guesses</span>
+                        </li>
+
+                        <li class="nav-item account">
+                            <img src="../../wwwroot/meda/icon/icon_profile.png" alt="IconProfile" />
+                            <a href="./login">Login</a>
+                            /
+                            <a href="./register">Register</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container">
+
+
+            <section class='match__row'>
+                <div class='match__card'>
+                    <div class="image">
+                        <img src="../../wwwroot/meda/items/crad_one.png" alt="" />
+                    </div>
+                    <div class="text">
+                        <h5>Prizes</h5>
+                        <ul>
+                            <li>
+                                <div class="left">
+                                    <span class='imagelist'>
+                                        <img src="../../wwwroot/meda/items/image_plastion.png" alt="Imagecover"
+                                            class='imagecover' />
+                                        <img src="../../wwwroot/meda/icon/icon_tag_one.png" alt="Imagetag"
+                                            class='imagetag' />
+                                    </span>
+                                    <span class='textlist'>
+                                        <span class='one'>MAIN PRIZE (1 User)</span>
+                                        <span class="two">Playstation 5</span>
+                                    </span>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <span class='imagelist'>
+                                        <img src="../../wwwroot/meda/items/headphone.png" alt="Imagecover"
+                                            class='imagecover' />
+                                        <img src="../../wwwroot/meda/icon/icon_tag_two.png" alt="Imagetag"
+                                            class='imagetag' />
+                                    </span>
+                                    <span class='textlist'>
+                                        <span class='one'>COMPLIMENTARY PRIZE (10 Users)</span>
+                                        <span class="two">Airpods 3</span>
+                                    </span>
+                                </div>
+
+                            </li>
+                        </ul>
+                        <h6>3 Subscribers</h6>
+
+                        <div class="buttons">
+                            <button class='btn btn_latestguesses activelist' id="btn_latestguesses">Latest
+                                guesses</button>
+                            <button class='btn btn_latestguesses' id="btn_topguesses">Top guesses</button>
+                        </div>
+
+
+                        <ul class='latestguesses active' id="latestguesses">
+                            <li>
+                                <span class='left'>
+
+                                    <img src="../../wwwroot/meda/users/image_three.png" alt="" />
+
+                                    <span class='text'>
+                                        <span>Hatem Kalhed</span>
+                                        <span>23 minutes ago</span>
+                                    </span>
+
+                                </span>
+
+                                <span class='rigth'> 1 Guesses</span>
+                            </li>
+                            <li>
+                                <span class='left'>
+
+                                    <img src="../../wwwroot/meda/users/image_three.png" alt="" />
+
+                                    <span class='text'>
+                                        <span>Hatem Kalhed</span>
+                                        <span>23 minutes ago</span>
+                                    </span>
+
+                                </span>
+
+                                <span class='rigth'> 1 Guesses</span>
+                            </li>
+                            <li>
+                                <span class='left'>
+
+                                    <img src="../../wwwroot/meda/users/image_three.png" alt="" />
+
+                                    <span class='text'>
+                                        <span>Hatem Kalhed</span>
+                                        <span>23 minutes ago</span>
+                                    </span>
+
+                                </span>
+
+                                <span class='rigth'> 1 Guesses</span>
+                            </li>
+                            <li>
+                                <span class='left'>
+
+                                    <img src="../../wwwroot/meda/users/image_three.png" alt="" />
+
+                                    <span class='text'>
+                                        <span>Hatem Kalhed</span>
+                                        <span>23 minutes ago</span>
+                                    </span>
+
+                                </span>
+
+                                <span class='rigth'> 1 Guesses</span>
+                            </li>
+                        </ul>
+
+                        <ul class='liststop' id="liststop">
+                            <li>
+                                <span class='left'>
+                                    <img src="../../wwwroot/meda/logo/alahly_logo.png" alt="" />
+                                    <span>5 - 1</span>
+                                    <img src="../../wwwroot/meda/logo/chelsea_logo.png" alt="" />
+                                </span>
+                                <span class='rigth'>1 Guesses</span>
+                            </li>
+                            <li>
+                                <span class='left'>
+                                    <img src="../../wwwroot/meda/logo/alahly_logo.png" alt="" />
+                                    <span>5 - 1</span>
+                                    <img src="../../wwwroot/meda/logo/chelsea_logo.png" alt="" />
+                                </span>
+                                <span class='rigth'>1 Guesses</span>
+                            </li>
+                            <li>
+                                <span class='left'>
+                                    <img src="../../wwwroot/meda/logo/alahly_logo.png" alt="" />
+                                    <span>5 - 1</span>
+                                    <img src="../../wwwroot/meda/logo/chelsea_logo.png" alt="" />
+                                </span>
+                                <span class='rigth'>1 Guesses</span>
+                            </li>
+                            <li>
+                                <span class='left'>
+                                    <img src="../../wwwroot/meda/logo/alahly_logo.png" alt="" />
+                                    <span>5 - 1</span>
+                                    <img src="../../wwwroot/meda/logo/chelsea_logo.png" alt="" />
+                                </span>
+                                <span class='rigth'>1 Guesses</span>
+                            </li>
+                        </ul>
+
+
+                        <div class="card_end">
+                            <button class='btn btn_add'>
+                                <span>Add Your Guess</span>
+                                <span>3 Guesses Remaining</span>
+                            </button>
+
+                            <span class='end_text'>maximum guesses in this competition is 2 </span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+
+
+    </main>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../../wwwroot/js/vendor/popper.min.js"></script>
+    <script src="../../wwwroot/js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        const btn_latestguesses = document.getElementById('btn_latestguesses'),
+            latestguesses = document.getElementById('latestguesses');
+
+
+        const btn_topguesses = document.getElementById('btn_topguesses'),
+        liststop = document.getElementById('liststop');
+
+
+        btn_latestguesses.addEventListener("click",
+            (e) => {
+                latestguesses.classList.add("active");
+                e.target.classList.add("activelist");
+                btn_topguesses.classList.remove("activelist");
+            })
+
+        btn_topguesses.addEventListener("click",
+            (e) => {
+                latestguesses.classList.remove("active");
+                btn_latestguesses.classList.remove("activelist");
+                e.target.classList.add("activelist");
+                liststop.classList.add("active");
+            })
+
+    </script>
+</body>
+
+</html>
